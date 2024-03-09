@@ -152,6 +152,7 @@ def main():
     out_dir = os.path.join("out", "encoded", os.path.basename(file))
     os.makedirs(out_dir, exist_ok = True)
     ref_dir = 'ref_imgs'
+    os.makedirs(ref_dir, exist_ok = True)
     if len(os.listdir(ref_dir)) == 0:
         print(f"No reference images in directory: {ref_dir}")
         return 2
